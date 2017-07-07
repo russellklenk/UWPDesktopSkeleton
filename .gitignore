@@ -1,0 +1,10 @@
+
+*.swp
+*.appx
+*.eappx
+.vs
+build-*
+MyApp/x64
+MyApp/x86
+AppPackages
+
