@@ -1,4 +1,3 @@
-
 *.swp
 *.appx
 *.eappx
@@ -6,5 +5,7 @@
 build-*
 MyApp/x64
 MyApp/x86
+MyApp-UWP/*.exe
+MyApp-UWP/*.pri
 AppPackages
 
