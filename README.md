@@ -20,3 +20,12 @@ First, copy the UWPDesktopSkeleton directory and all of its files to your destin
 
 Once you are ready to do a final signed deployment, you'll have to edit the MakeAppx step in makerel.cmd to sign the appx package so it can be installed by end users. As-is, running makerel will install the application in development mode for testing. Likewise, running clean will remove the development mode application.
 
+Project Structure
+=================
+
+The desktop application supporting C++/CX can be modified by loading the provided Visual Studio solution into Visual Studio 2017 or later. You should be able to build and debug using Visual Studio as you normally do. Only x64 platforms are supported out of the box.
+
+All of the data related to the UWP packaging and Desktop Bridge is located in the MyApp-UWP directory, and this directory is what gets packaged into the appx. The makerel.cmd script will copy the output executable to the appropriate location prior to packaging. The MyApp-UWP\Assets directory contains all of the Windows Store asset templates.
+
+By default, headers go into the `include` directory and source files go into the `src` directory.
+
